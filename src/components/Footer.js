@@ -6,56 +6,88 @@ const Wrapper = styled.div`
 export default class Footer extends Component {
   render() {
     return (
-      <div>
-        <Wrapper className="ui inverted vertical segment">
-          <div className="ui container">
-            <div className="ui inverted stackable divided grid">
-              <div className="row">
-                <div className="three wide column">
-                  <h4 className="ui inverted header">About</h4>
-                  <div role="list" className="ui inverted link list">
-                    <a role="listitem" className="item">
-                      Sitemap
-                    </a>
-                    <a role="listitem" className="item">
-                      Contact Us
-                    </a>
-                    <a role="listitem" className="item">
-                      Religious Ceremonies
-                    </a>
-                    <a role="listitem" className="item">
-                      Gazebo Plans
-                    </a>
-                  </div>
-                </div>
-                <div className="three wide column">
-                  <h4 className="ui inverted header">Services</h4>
-                  <div role="list" className="ui inverted link list">
-                    <a role="listitem" className="item">
-                      Banana Pre-Order
-                    </a>
-                    <a role="listitem" className="item">
-                      DNA FAQ
-                    </a>
-                    <a role="listitem" className="item">
-                      How To Access
-                    </a>
-                    <a role="listitem" className="item">
-                      Favorite X-Men
-                    </a>
-                  </div>
-                </div>
-                <div className="seven wide column">
-                  <h4 className="ui inverted header">Footer Header</h4>
-                  <p>
-                    Extra space for a call to action inside the footer that
-                    could help re-engage users.
-                  </p>
-                </div>
+      <div className="ui inverted vertical footer segment">
+        <div className="ui center aligned container">
+          <div className="ui stackable inverted divided grid">
+            <div className="three wide column">
+              <h4 className="ui inverted header">Group 1</h4>
+              <div className="ui inverted link list">
+                <a href="#" className="item">
+                  Link One
+                </a>
+                <a href="#" className="item">
+                  Link Two
+                </a>
+                <a href="#" className="item">
+                  Link Three
+                </a>
+                <a href="#" className="item">
+                  Link Four
+                </a>
               </div>
             </div>
+            <div className="three wide column">
+              <h4 className="ui inverted header">Group 2</h4>
+              <div className="ui inverted link list">
+                <a href="#" className="item">
+                  Link One
+                </a>
+                <a href="#" className="item">
+                  Link Two
+                </a>
+                <a href="#" className="item">
+                  Link Three
+                </a>
+                <a href="#" className="item">
+                  Link Four
+                </a>
+              </div>
+            </div>
+            <div className="three wide column">
+              <h4 className="ui inverted header">Group 3</h4>
+              <div className="ui inverted link list">
+                <a href="#" className="item">
+                  Link One
+                </a>
+                <a href="#" className="item">
+                  Link Two
+                </a>
+                <a href="#" className="item">
+                  Link Three
+                </a>
+                <a href="#" className="item">
+                  Link Four
+                </a>
+              </div>
+            </div>
+            <div className="seven wide column">
+              <h4 className="ui inverted header">Footer Header</h4>
+              <p>
+                Extra space for a call to action inside the footer that could
+                help re-engage users.
+              </p>
+            </div>
           </div>
-        </Wrapper>
+          <div className="ui inverted section divider" />
+          <img
+            src="assets/images/logo.png"
+            className="ui centered mini image"
+          />
+          <div className="ui horizontal inverted small divided link list">
+            <a className="item" href="#">
+              Site Map
+            </a>
+            <a className="item" href="#">
+              Contact Us
+            </a>
+            <a className="item" href="#">
+              Terms and Conditions
+            </a>
+            <a className="item" href="#">
+              Privacy Policy
+            </a>
+          </div>
+        </div>
       </div>
     );
   }

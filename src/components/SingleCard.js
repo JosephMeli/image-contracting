@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import awardImage from '../award_image.png';
 
 const Wrapper = styled.div`
   padding: 8em 0em;
 `;
 const Heading = styled.h3`
   font-size: 2em;
+  color: #002487;
 `;
 const Paragraph = styled.p`
   font-size: 1.33em;
@@ -32,7 +34,7 @@ class SingleCard extends Component {
             </div>
             <div className="right floated six wide column">
               <img
-                src="/images/wireframe/white-image.png"
+                src={awardImage}
                 className="ui large bordered rounded image"
                 alt="some_image"
               />
@@ -40,7 +42,12 @@ class SingleCard extends Component {
           </div>
           <div className="row">
             <div className="center aligned column">
-              <button className="ui huge button">Check Them Out</button>
+              <a
+                href="https://www.houzz.com/pro/imagecontractingnh/image-contracting"
+                target="_blank"
+              >
+                <button className="ui huge green button">Houzz Profile</button>
+              </a>
             </div>
           </div>
         </div>

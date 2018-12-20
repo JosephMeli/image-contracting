@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import SingleCard from './components/SingleCard';
 import TitleBar from './components/TitleBar';
 import logo from './logo.svg';
+
 import './App.css';
 import Opcard from './components/Opcard';
 import OtherPlaces from './components/OtherPlaces';
@@ -19,10 +20,6 @@ class App extends Component {
         <TitleBar />
         <header className="ui  vertical center aligned segment">
           <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          Learn React
         </header>
 
         <SingleCard />
