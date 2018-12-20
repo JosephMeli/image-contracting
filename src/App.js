@@ -1,25 +1,35 @@
 import React, { Component } from 'react';
+
+import SingleCard from './components/SingleCard';
+import TitleBar from './components/TitleBar';
 import logo from './logo.svg';
 import './App.css';
+import Opcard from './components/Opcard';
+import OtherPlaces from './components/OtherPlaces';
+import Footer from './components/Footer';
+
+import Portfolio from './components/Portfolio';
+
+// Global styles but theme- and update-able!
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
+        <TitleBar />
+        <header className="ui  vertical center aligned segment">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          Learn React
         </header>
+
+        <SingleCard />
+        <Portfolio />
+        <OtherPlaces />
+        <Opcard />
+        <Footer />
       </div>
     );
   }
