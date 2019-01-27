@@ -50,12 +50,11 @@ export default class AwardsBar extends Component {
             Remodeling, Water Damage Restoration, Kitchens, Bathrooms,
             Additions, Garages, General Repairs, Handyman Services.
           </Paragraph>
-          <Heading>
-            Certifications and Awards EPA/HUD Certified Lead-Safe FirmMember
-          </Heading>
+          <Heading>Certifications and Awards</Heading>
           <Paragraph>
-            Assoc. of Certified Handyman ProfessionalsHomeadvisor.com Listed and
-            Approved - 5 StarsBest of Houzz 2014 - 2018
+            EPA/HUD Certified Lead-Safe FirmMember Assoc. of Certified Handyman
+            ProfessionalsHomeadvisor.com Listed and Approved - 5 StarsBest of
+            Houzz 2014 - 2018
           </Paragraph>
         </RightColumn>
       </Wrapper>
