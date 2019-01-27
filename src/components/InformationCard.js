@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import instagram from '../instagram.svg';
-import facebook from '../facebook.svg';
-import houzz from '../houzz.png';
+import instagram from '../assets/instagram.svg';
+import facebook from '../assets/facebook.svg';
+import houzz from '../assets/houzz.png';
 
 const Wrapper = styled.div`
   background: #002487;

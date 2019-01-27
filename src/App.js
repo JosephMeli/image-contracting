@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 
 import Banner from './components/Banner';
-
 import InformationCard from './components/InformationCard';
-
 import Footer from './components/Footer';
-
-import styled from 'styled-components';
 import AwardsBar from './components/AwardsBar';
 
 const Main = styled.div`

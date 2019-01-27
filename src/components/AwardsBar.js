@@ -1,37 +1,50 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-
+import award from '../assets/award_image.png';
 const Wrapper = styled.div`
   background: #002487;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, 1fr);
-  text-align: justify;
+
+  padding-bottom: 10px;
   margin-bottom: 10px;
   border-radius: 1%;
 `;
 const Heading = styled.h3`
-  font-size: 2em;
+  font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
   color: white;
-  padding-bottom: 10px;
-  padding-right: 5px;
 `;
 
-const Paragraph = styled.p`
-  font-size: 1.3em;
+const Paragraph = styled.h6`
+  font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 1em;
   color: white;
 `;
 const Types = styled.div`
   grid-column: 1fr;
-  position: relative;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+const RightColumn = styled.div`
+  border-left-style: solid;
+  border-color: white;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
 `;
 export default class AwardsBar extends Component {
   render() {
     return (
       <Wrapper>
         <Types>
+          <img className="ui large image" src={award} />
+        </Types>
+        <RightColumn>
           <Heading>Services Provided</Heading>
           <Paragraph>
             Remodeling, Water Damage Restoration, Kitchens, Bathrooms,
@@ -44,7 +57,7 @@ export default class AwardsBar extends Component {
             Assoc. of Certified Handyman ProfessionalsHomeadvisor.com Listed and
             Approved - 5 StarsBest of Houzz 2014 - 2018
           </Paragraph>
-        </Types>
+        </RightColumn>
       </Wrapper>
     );
   }
