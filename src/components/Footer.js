@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-const Wrapper = styled.div`
-  padding: 5em 0em;
-`;
+
 export default class Footer extends Component {
   render() {
     return (
@@ -69,10 +67,7 @@ export default class Footer extends Component {
             </div>
           </div>
           <div className="ui inverted section divider" />
-          <img
-            src="assets/images/logo.png"
-            className="ui centered mini image"
-          />
+          <img src="../logo.svg" className="ui centered mini image" />
           <div className="ui horizontal inverted small divided link list">
             <a className="item" href="#">
               Site Map

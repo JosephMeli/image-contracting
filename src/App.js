@@ -1,33 +1,36 @@
 import React, { Component } from 'react';
 
-import SingleCard from './components/SingleCard';
-import TitleBar from './components/TitleBar';
-import logo from './logo.svg';
+import Banner from './components/Banner';
 
-import './App.css';
-import Opcard from './components/Opcard';
-import OtherPlaces from './components/OtherPlaces';
+import InformationCard from './components/InformationCard';
+
 import Footer from './components/Footer';
 
-import Portfolio from './components/Portfolio';
+import styled from 'styled-components';
+import AwardsBar from './components/AwardsBar';
 
-// Global styles but theme- and update-able!
+const Main = styled.div`
+  background-color: white;
+  margin: auto;
+  margin-top: 40px;
+  width: 70%;
+
+  border-radius: 1%;
+  border: none;
+  animation: 0.5s forwards;
+`;
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <TitleBar />
-        <header className="ui  vertical center aligned segment">
-          <img src={logo} className="App-logo" alt="logo" />
-        </header>
-
-        <SingleCard />
-        <Portfolio />
-        <OtherPlaces />
-        <Opcard />
+      <Main className="App">
+        <div className="ui segment">
+          <Banner />
+        </div>
+        <InformationCard />
+        <AwardsBar />
         <Footer />
-      </div>
+      </Main>
     );
   }
 }
