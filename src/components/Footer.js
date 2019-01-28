@@ -1,89 +1,75 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
+const Wrapper = styled.div`
+  display: grid;
+  background-color: #1b1c1d;
+  color: white;
+  grid-template-columns: [col] 200px [col] 200px [col] auto;
+  grid-template-rows: [row] 100px [row] auto;
+  margin-bottom: 10px;
+  padding: 50px;
+`;
+
+const Powered = styled.div`
+  grid-column: col 3;
+  grid-row: row 2;
+  padding-top: 25px;
+`;
+
+const Payment = styled.div`
+  border-color: white;
+  grid-column: col 1;
+  grid-row: row 1;
+`;
+const Social = styled.div`
+  text-align: center;
+  border-left-style: solid;
+  border-color: white;
+  grid-column: col 2;
+  grid-row: row 1;
+`;
+
+const Bonus = styled.div`
+  border-left-style: solid;
+
+  border-color: white;
+  grid-row: row 1;
+  grid-column: col 3;
+  text-align: center;
+  padding: 10px;
+`;
+const Heading = styled.h3`
+  font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+  color: white;
+`;
+const Paragraph = styled.h6`
+  font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  color: white;
+`;
+
 export default class Footer extends Component {
   render() {
     return (
-      <div className="ui inverted vertical footer segment">
-        <div className="ui center aligned container">
-          <div className="ui stackable inverted divided grid">
-            <div className="three wide column">
-              <h4 className="ui inverted header">Group 1</h4>
-              <div className="ui inverted link list">
-                <a href="#" className="item">
-                  Link One
-                </a>
-                <a href="#" className="item">
-                  Link Two
-                </a>
-                <a href="#" className="item">
-                  Link Three
-                </a>
-                <a href="#" className="item">
-                  Link Four
-                </a>
-              </div>
-            </div>
-            <div className="three wide column">
-              <h4 className="ui inverted header">Group 2</h4>
-              <div className="ui inverted link list">
-                <a href="#" className="item">
-                  Link One
-                </a>
-                <a href="#" className="item">
-                  Link Two
-                </a>
-                <a href="#" className="item">
-                  Link Three
-                </a>
-                <a href="#" className="item">
-                  Link Four
-                </a>
-              </div>
-            </div>
-            <div className="three wide column">
-              <h4 className="ui inverted header">Group 3</h4>
-              <div className="ui inverted link list">
-                <a href="#" className="item">
-                  Link One
-                </a>
-                <a href="#" className="item">
-                  Link Two
-                </a>
-                <a href="#" className="item">
-                  Link Three
-                </a>
-                <a href="#" className="item">
-                  Link Four
-                </a>
-              </div>
-            </div>
-            <div className="seven wide column">
-              <h4 className="ui inverted header">Footer Header</h4>
-              <p>
-                Extra space for a call to action inside the footer that could
-                help re-engage users.
-              </p>
-            </div>
-          </div>
-          <div className="ui inverted section divider" />
-          <img src="../logo.svg" className="ui centered mini image" />
-          <div className="ui horizontal inverted small divided link list">
-            <a className="item" href="#">
-              Site Map
-            </a>
-            <a className="item" href="#">
-              Contact Us
-            </a>
-            <a className="item" href="#">
-              Terms and Conditions
-            </a>
-            <a className="item" href="#">
-              Privacy Policy
-            </a>
-          </div>
-        </div>
-      </div>
+      <Wrapper>
+        <Payment>
+          <Heading>Payment Options</Heading>
+        </Payment>
+
+        <Social>
+          <Heading>Social Connections</Heading>
+        </Social>
+        <Bonus>
+          <Heading>Areas Served</Heading>
+          Amherst, Auburn, Bedford, Derry, East Merrimack, Goffstown, Hooksett,
+          Litchfield, Londonderry, Manchester, Merrimack, Milford, Mont Vernon,
+          Nashua, New Boston, Pinardville, Portsmouth, South Hooksett, Weare,
+          Southern NH and Northern MA
+        </Bonus>
+        <Powered> Powered by Joseph Meli</Powered>
+      </Wrapper>
     );
   }
 }

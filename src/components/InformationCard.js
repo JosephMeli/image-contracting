@@ -9,7 +9,7 @@ const Wrapper = styled.div`
   background: #002487;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(1, 1fr);
+
   text-align: center;
   margin-bottom: 10px;
   border-radius: 1%;
@@ -22,15 +22,13 @@ const Types = styled.div`
   padding-bottom: 10px;
 `;
 const SubTypes = styled.div`
-  grid-row: 1fr;
+  grid-row: row;
 `;
 
 const ContactColumn = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-left-style: solid;
   border-color: white;
+  grid-template-rows: repeat(3, 1fr);
 `;
 const Heading = styled.h3`
   font-size: 2em;
@@ -62,20 +60,33 @@ export default class InformationCard extends Component {
           </SubTypes>
         </Types>
         <ContactColumn>
-          <SubTypes>
+          <div>
             <Heading> (603) 716-1522</Heading>
-          </SubTypes>
+          </div>
+
           <SubTypes>
-            <a href="_">
+            <a
+              href="https://www.facebook.com/imagecontractingnh/"
+              target="blank"
+            >
               <Image src={facebook} />
             </a>
             <a href="_">
               <Image src={instagram} />
             </a>
 
-            <a href="_">
+            <a
+              href="https://www.houzz.com/pro/imagecontractingnh/image-contracting"
+              target="blank"
+            >
               <Image src={houzz} />
             </a>
+          </SubTypes>
+          <div>
+            <Heading>PO Box 10145 Bedford, NH 03110</Heading>
+          </div>
+          <SubTypes>
+            <Heading>info@imagepropertysolutions.com</Heading>
           </SubTypes>
         </ContactColumn>
       </Wrapper>

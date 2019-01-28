@@ -19,19 +19,17 @@ const ImageWrapper = styled.div`
   align-items: center;
   justify-content: center;
 `;
+
 export default class Review extends Component {
   render() {
     return (
       <Wrapper className="ui segment">
-        <a href="https://www.houzz.com/pro/imagecontractingnh/image-contracting">
-          <Comment>
-            John's work is prompt and excellent. He was recommended by my
-            realtor. He is very detail and goes beyond "just doing the job." He
-            did a cellar wall for us - and we were extremely pleased with his
-            high quality work. And he pricing was very fair. Definately will use
-            John of Image Contracting for future carpentry work.{' '}
-          </Comment>
-          <Author> -Stephen Priest</Author>
+        <a
+          href="https://www.houzz.com/pro/imagecontractingnh/image-contracting"
+          target="blank"
+        >
+          <Comment>{this.props.comment}</Comment>
+          <Author>{this.props.author}</Author>
           <ImageWrapper>
             <img src={fiveStar} />
           </ImageWrapper>
