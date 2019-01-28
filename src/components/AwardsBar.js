@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import award from '../assets/award_image.svg';
+
 const Wrapper = styled.div`
   background: #002487;
   display: grid;

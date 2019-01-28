@@ -7,6 +7,8 @@ import Footer from './components/Footer';
 import AwardsBar from './components/AwardsBar';
 import Review from './components/Review';
 
+import PBJM from './assets/PBJM.svg';
+
 const Main = styled.div`
   background-color: white;
   margin: auto;
@@ -18,6 +20,19 @@ const Main = styled.div`
   animation: 0.5s forwards;
 `;
 
+const Credit = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  &:hover {
+    transform: scale(1.05);
+  }
+`;
+
+const Image = styled.img``;
+
 const SP =
   'John\'s work is prompt and excellent. He was recommended by my realtor. He is very detail and goes beyond "just doing the job." He did a cellar wall for us - and we were extremely pleased with his high quality work. And he pricing was very fair. Definately will use John of Image Contracting for future carpentry work.';
 const IN =
@@ -25,17 +40,24 @@ const IN =
 class App extends Component {
   render() {
     return (
-      <Main className="App">
-        <div className="ui segment">
-          <Banner />
-        </div>
+      <React.Fragment>
+        <Main className="App">
+          <div className="ui segment">
+            <Banner />
+          </div>
 
-        <InformationCard />
-        <Review comment={SP} author="-Stephen Priest" />
-        <AwardsBar />
-        <Review comment={IN} author="- Impeccable Nest" />
-        <Footer />
-      </Main>
+          <InformationCard />
+          <Review comment={SP} author="-Stephen Priest" />
+          <AwardsBar />
+          <Review comment={IN} author="- Impeccable Nest" />
+          <Footer />
+        </Main>
+        <Credit>
+          <a href="https://josephmeli.com" target="blank">
+            <Image className="ui medium rounded image" src={PBJM} />
+          </a>
+        </Credit>
+      </React.Fragment>
     );
   }
 }

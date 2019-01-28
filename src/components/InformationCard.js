@@ -43,6 +43,12 @@ const Image = styled.img`
   padding-bottom: 10px;
 `;
 
+const Link = styled.a`
+  &:hover {
+    transform: scale(1.1);
+  }
+`;
+
 export default class InformationCard extends Component {
   render() {
     return (
@@ -65,22 +71,22 @@ export default class InformationCard extends Component {
           </div>
 
           <SubTypes>
-            <a
+            <Link
               href="https://www.facebook.com/imagecontractingnh/"
               target="blank"
             >
               <Image src={facebook} />
-            </a>
-            <a href="_">
+            </Link>
+            <Link href="_">
               <Image src={instagram} />
-            </a>
+            </Link>
 
-            <a
+            <Link
               href="https://www.houzz.com/pro/imagecontractingnh/image-contracting"
               target="blank"
             >
               <Image src={houzz} />
-            </a>
+            </Link>
           </SubTypes>
           <div>
             <Heading>PO Box 10145 Bedford, NH 03110</Heading>
