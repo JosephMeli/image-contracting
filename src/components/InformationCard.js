@@ -37,8 +37,8 @@ const ContactColumn = styled.div`
   border-color: white;
   grid-template-rows: repeat(3, 1fr);
 `;
-const Heading = styled.h3`
-  font-size: 2em;
+const Heading = styled.h5`
+  font-size: 1.3em;
   color: white;
   padding-bottom: 10px;
   padding-right: 5px;

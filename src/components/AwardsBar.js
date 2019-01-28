@@ -54,7 +54,7 @@ export default class AwardsBar extends Component {
           <Heading>Certifications and Awards</Heading>
           <Paragraph>
             EPA/HUD Certified Lead-Safe Firm Member Assoc. of Certified Handyman
-            ProfessionalsHomeadvisor.com Listed and Approved - 5 StarsBest of
+            ProfessionalsHomeadvisor.com Listed and Approved - 5 Stars Best of
             Houzz 2014-2019
           </Paragraph>
         </RightColumn>

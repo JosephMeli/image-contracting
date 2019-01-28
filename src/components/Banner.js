@@ -5,13 +5,14 @@ import logo from '../assets/logo.svg';
 
 const Wrapper = styled.div`
   display: grid;
-  grid-template-columns: [col] 390px 2fr 1fr;
-
+  grid-template-columns: [col] 300px 2fr 1fr;
   grid-gap: 10px;
 `;
 const LogoWrapper = styled.div`
   grid-column: col;
-  padding-left: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 const Paragraph = styled.h1`
   font-family: 'Chivo', sans-serif;
