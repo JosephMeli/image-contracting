@@ -43,7 +43,7 @@ export default class AwardsBar extends Component {
     return (
       <Wrapper>
         <Types>
-          <img className="ui large image" src={award} />
+          <img className="ui large image" src={award} alt="houzz award" />
         </Types>
         <RightColumn>
           <Heading>Services Provided</Heading>
@@ -53,9 +53,9 @@ export default class AwardsBar extends Component {
           </Paragraph>
           <Heading>Certifications and Awards</Heading>
           <Paragraph>
-            EPA/HUD Certified Lead-Safe FirmMember Assoc. of Certified Handyman
+            EPA/HUD Certified Lead-Safe Firm Member Assoc. of Certified Handyman
             ProfessionalsHomeadvisor.com Listed and Approved - 5 StarsBest of
-            Houzz 2014 - 2019
+            Houzz 2014-2019
           </Paragraph>
         </RightColumn>
       </Wrapper>

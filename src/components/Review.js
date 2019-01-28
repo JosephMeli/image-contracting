@@ -31,7 +31,7 @@ export default class Review extends Component {
           <Comment>{this.props.comment}</Comment>
           <Author>{this.props.author}</Author>
           <ImageWrapper>
-            <img src={fiveStar} />
+            <img src={fiveStar} alt="five Star" />
           </ImageWrapper>
         </a>
       </Wrapper>

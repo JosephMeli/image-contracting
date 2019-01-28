@@ -19,10 +19,17 @@ const Types = styled.div`
   grid-column: 1fr;
   position: relative;
   padding-top: 10px;
-  padding-bottom: 10px;
 `;
+
 const SubTypes = styled.div`
   grid-row: row;
+`;
+
+const PlaceHolder = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 `;
 
 const ContactColumn = styled.div`
@@ -54,16 +61,18 @@ export default class InformationCard extends Component {
     return (
       <Wrapper>
         <Types>
-          <SubTypes>
-            <Heading>General Contractor</Heading>
-          </SubTypes>
+          <PlaceHolder>
+            <SubTypes>
+              <Heading>General Contractor</Heading>
+            </SubTypes>
 
-          <SubTypes>
-            <Heading>Specialty Contractor</Heading>
-          </SubTypes>
-          <SubTypes>
-            <Heading>Home and Commercial</Heading>
-          </SubTypes>
+            <SubTypes>
+              <Heading>Specialty Contractor</Heading>
+            </SubTypes>
+            <SubTypes>
+              <Heading>Home and Commercial</Heading>
+            </SubTypes>
+          </PlaceHolder>
         </Types>
         <ContactColumn>
           <div>

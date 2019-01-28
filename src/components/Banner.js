@@ -48,13 +48,13 @@ class Banner extends Component {
     return (
       <Wrapper>
         <LogoWrapper>
-          <img src={logo} className="ui  large image" alt="some_image" />
+          <img src={logo} className="ui  large image" alt="Logo" />
         </LogoWrapper>
         <FixSloganLayout>
           <Slogan>Flawless Results. Every Project. Every Time.</Slogan>
         </FixSloganLayout>
         <ProfileWrap>
-          <img className="ui  small image" src={Jon} />
+          <img className="ui  small image" src={Jon} alt="John" />
           <Paragraph>John Harding</Paragraph>
         </ProfileWrap>
       </Wrapper>
