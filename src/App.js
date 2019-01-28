@@ -5,6 +5,7 @@ import Banner from './components/Banner';
 import InformationCard from './components/InformationCard';
 import Footer from './components/Footer';
 import AwardsBar from './components/AwardsBar';
+import Review from './components/Review';
 
 const Main = styled.div`
   background-color: white;
@@ -24,8 +25,11 @@ class App extends Component {
         <div className="ui segment">
           <Banner />
         </div>
+
         <InformationCard />
+        <Review />
         <AwardsBar />
+        <Review />
         <Footer />
       </Main>
     );

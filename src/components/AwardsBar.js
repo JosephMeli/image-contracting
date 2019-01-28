@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import award from '../assets/award_image.png';
+import award from '../assets/award_image.svg';
 const Wrapper = styled.div`
   background: #002487;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, 1fr);
 
-  padding-bottom: 10px;
+  padding: 10px;
   margin-bottom: 10px;
   border-radius: 1%;
 `;
