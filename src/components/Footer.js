@@ -63,10 +63,12 @@ export default class Footer extends Component {
         </Social>
         <Bonus>
           <Heading>Areas Served</Heading>
-          Amherst, Auburn, Bedford, Derry, East Merrimack, Goffstown, Hooksett,
-          Litchfield, Londonderry, Manchester, Merrimack, Milford, Mont Vernon,
-          Nashua, New Boston, Pinardville, Portsmouth, South Hooksett, Weare,
-          Southern NH and Northern MA
+          <Paragraph>
+            Amherst, Auburn, Bedford, Derry, East Merrimack, Goffstown,
+            Hooksett, Litchfield, Londonderry, Manchester, Merrimack, Milford,
+            Mont Vernon, Nashua, New Boston, Pinardville, Portsmouth, South
+            Hooksett, Weare, Southern NH and Northern MA
+          </Paragraph>
         </Bonus>
         <Powered> Powered by Joseph Meli</Powered>
       </Wrapper>
