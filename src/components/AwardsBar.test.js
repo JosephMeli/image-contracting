@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import AwardBar from './AwardBar';
+import AwardsBar from './AwardsBar';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<AwardBar />, div);
+  ReactDOM.render(<AwardsBar />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
